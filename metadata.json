@@ -1,0 +1,6 @@
+{
+  "name": "Luvia",
+  "description": "Luvia is a premium educational SaaS platform delivering immersive, high-fidelity learning experiences with advanced course management, interactive virtual classrooms, and intelligent analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
