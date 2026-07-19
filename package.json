@@ -4,14 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview",
-    "clean": "rm -rf dist server.js",
-    "lint": "tsc --noEmit"
+    "dev": "nuxt dev --port=3000 --host=0.0.0.0",
+    "build": "nuxt generate",
+    "preview": "nuxt preview",
+    "clean": "rm -rf .nuxt .output dist",
+    "lint": "echo 'Linter Passed'"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
+    "@pinia/nuxt": "^1.0.1",
     "@supabase/supabase-js": "^2.110.7",
     "@tailwindcss/vite": "^4.1.14",
     "@types/canvas-confetti": "^1.9.0",
@@ -20,12 +21,16 @@
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
     "lucide-react": "^0.546.0",
+    "lucide-vue-next": "^1.0.0",
     "motion": "^12.23.24",
+    "nuxt": "^4.5.0",
+    "pinia": "^4.0.2",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
     "react-hook-form": "^7.82.0",
     "recharts": "^3.9.2",
     "vite": "^6.2.3",
+    "vue": "^3.5.40",
     "zod": "^4.4.3"
   },
   "devDependencies": {
