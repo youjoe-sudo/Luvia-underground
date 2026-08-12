@@ -1,0 +1,17 @@
+import type { Metadata } from 'next';
+import { PublicHeader, PublicFooter } from '@/components/layout/PublicShell';
+
+export const metadata: Metadata = {
+  title: 'Luvia',
+  description: 'The Luvia course. Premium educational experience.',
+};
+
+export default function PublicLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex min-h-screen flex-col">
+      <PublicHeader />
+      <main className="flex-1">{children}</main>
+      <PublicFooter />
+    </div>
+  );
+}

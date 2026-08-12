@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir D:\\\\LUVIA)",
+      "Read(//d//**)",
+      "Bash(find /d -maxdepth 3 -iname \"*PRD*\" -o -iname \"*luvia*\" -o -iname \"*Supabase_Full*\")",
+      "Bash(npm run *)",
+      "Bash(mkdir -p admin)",
+      "Bash(mv \"\\(admin\\)/certificates\" \"\\(admin\\)/cohorts\" \"\\(admin\\)/courses\" \"\\(admin\\)/dashboard\" \"\\(admin\\)/devices\" \"\\(admin\\)/enrollments\" \"\\(admin\\)/requests\" \"\\(admin\\)/sessions\" \"\\(admin\\)/tickets\" \"\\(admin\\)/layout.tsx\" admin/)",
+      "Bash(rmdir \"\\(admin\\)\")",
+      "Bash(mkdir -p student)",
+      "Bash(mv \"\\(student\\)/community\" \"\\(student\\)/dashboard\" \"\\(student\\)/exams\" \"\\(student\\)/lessons\" \"\\(student\\)/profile\" \"\\(student\\)/resources\" \"\\(student\\)/sessions\" \"\\(student\\)/tickets\" \"\\(student\\)/layout.tsx\" student/)",
+      "Bash(mv \"\\(student\\)/exams\" student/exams)",
+      "Bash(mv \"\\(student\\)/lessons\" student/lessons)",
+      "Bash(rmdir \"\\(student\\)\")",
+      "Bash(cd *)",
+      "Bash(mv \"app/\\(student\\)/exams\" app/student/exams)",
+      "Bash(mv \"app/\\(student\\)/lessons\" app/student/lessons)",
+      "Bash(rmdir \"app/\\(student\\)\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const path=require\\('path'\\); fs.renameSync\\('app/\\(student\\)/exams', 'app/student/exams'\\); fs.renameSync\\('app/\\(student\\)/lessons', 'app/student/lessons'\\); fs.rmdirSync\\('app/\\(student\\)'\\); console.log\\('done'\\);\")",
+      "Bash(tasklist)",
+      "Bash(node -e ' *)",
+      "Bash(npx tsc *)",
+      "Bash(node -e \"console.log\\(require\\('@supabase/supabase-js/package.json'\\).version\\); console.log\\(require\\('@supabase/ssr/package.json'\\).version\\)\")",
+      "Bash(rm -f test-type.ts)",
+      "Bash(rm -rf .next)",
+      "Bash(rm -f tsconfig.tsbuildinfo)",
+      "Bash(npx --no-install next lint --quiet)",
+      "Bash(npx --no-install tsc --noEmit)"
+    ]
+  }
+}
